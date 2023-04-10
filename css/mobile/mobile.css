@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.categories-title{
+    font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+margin-top: 50px;
+margin-bottom: 40px;
+}
+
+.cards{
+    width: 166px;
+    height: 918px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+.cards :last-child{
+    margin-bottom: 20px;
+}
+
+.cards>li{
+width: 166px;
+height: 128px;
+
+background: #F2F3F6;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+.cards i{
+    margin-bottom: 15px;
+}
+.cards p{
+    font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #111238;
+}
+
+/* SECTION JOBS */
+
+.vacancies-cards{
+    width: 290px;
+    height: 1824px;
+    margin: 40px auto 30px;
+}
+
+.vacancies-card{
+    border: 1px solid #C5C9D5;
+    width: 290px;
+    height: 441px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px 0 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+
+}
+
+.vacancie-title{
+    width: 173px;
+    height: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vacancie-stack{
+    width: 183px;
+    height: 59px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vacancie-stack .stack{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    
+}
+
+.salary{
+    width: 113px;
+height: 39px;
+
+background: #1A75E8;
+border-radius: 5px;
+
+font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+h6{
+    font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #111238;
+
+}
+
+p{
+    font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #B2B2B2;
+
+}
+
+.stack li{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 10px;
+gap: 10px;
+    width: 56px;
+height: 27px;
+
+border: 1px solid #B2B2B2;
+border-radius: 5px;
+color: #B2B2B2;
+}
+
+a{
+    width: 90px;
+height: 17px;
+
+font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+
+color: #1A75E8;
+text-decoration: none;
+}
+
+/* HEADER MENU */
+
+.menu-btn{
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+label span, label 
+span::after, label 
+span::before{
+    content: "";
+    width: 25px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;    
+
+}
+
+label span::before{
+    top: -8px;
+}
+
+label span::after{
+    top: 8px;
+}
+
+input[type="checkbox"]:checked ~ label span{
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:checked ~ label span:before{
+    top: 0;
+    transform: rotate(0);
+}
+
+input[type="checkbox"]:checked ~ label span::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+input[type="checkbox"]:checked ~ .menu-btn {
+    display: flex;
+    
+}
+@media (max-width: 768px) {
+    .menu-btn {
+        position: absolute;
+        right: 50%;
+        width: 250px;
+        height: 100vh;
+        justify-content: start;
+        background-color: #1A75E8;
+        border-radius: 10px;
+        border: 1px solid #111300;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .goin-block{
+        padding: 30px;
+    }
+
+    .menu-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90px;
+        text-decoration: none;
+
+        
+    }
+    .menu-item a{
+        font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+/* Text/Primary */
+
+color: #111238;
+    }
+    .login{
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #FFFFFF;
+        background-color: #1A75E8;
+        border-radius: 5px;
+        border-color: #111238;
+    }
+    .regis{
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #ffffff;
+        background-color: #1A75E8;
+        border-radius: 5px;
+        border-color: #111238;
+    }
+
+}
+nav{
+    position: absolute;
+    left: 90%;
+    top: 40px;
+}
+menu{
+    padding: 30px;
+}
+
+/* .menu-btn{
+    position: absolute;
+    right: 50px;
+} */
+
+header{
+    background: #F2F3F6;
+}
+
+.title{
+
+font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+
+color: #111238;
+
+}
+
+.call{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    
+    text-align: center;
+    
+    /* Text/Primary */
+    
+    color: #111238;
+
+}
+
+.heading-text{
+    margin: 0 10px;
+}
+
+.input-search{
+    width: 290px;
+height: 70px;
+background: #FFFFFF;
+border: 1px solid rgba(209, 209, 209, 0.1);
+box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+border-radius: 5px;
+
+display: flex;
+align-items: center;
+
+margin: 30px auto;
+
+
+}
+.input-search input{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.icon{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+margin-left: 210px;
+gap: 10px;
+
+position: absolute;
+width: 68.44px;
+height: 45px;
+background: #1A75E8;
+border-radius: 5px;
+color: #FFFFFF;
+
+}
+
+.icon::before{
+    display: flex;
+    height: 100%;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tututu p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.category{
+    /* display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 10px;
+gap: 10px;
+    width: 56px;
+height: 27px;
+
+border: 1px solid #B2B2B2;
+border-radius: 5px;
+color: #B2B2B2; */
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 10px;
+gap: 10px;
+
+width: 259px;
+height: 27px;
+margin: 0 auto;
+}
+
+.category li{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+flex-wrap: nowrap;
+
+
+border: 1px solid #B2B2B2;
+border-radius: 5px;
+
+font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+/* Inputs/Grey */
+
+color: #B2B2B2;
+width: 83px;
+}
+
+.hero{
+    margin-left: 50px;
+    padding: 40px 0;
+}
+
+.more-vacancies{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 30px;
+margin: 0 auto;
+
+background: #1A75E8;
+color: #FFFFFF;
+border-radius: 5px;
+}
+
+footer{
+    height: 610px;
+    width: 100%;
+}
+
+.footp{
+    width: 100%;
+    height: 19px;
+    
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+    color: #111238;
+    margin-bottom: 10px;
+}
+
+.footh{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    width: 100%;
+    
+    color: #111238;
+    margin: 15px 0;
+}
+
+.mailing{
+    height: 420px;
+    position: relative;
+    top: 350px;
+    background: #F2F3F6;
+}
+
+.mailingh{
+    font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #111238;
+padding-top: 70px;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.mailingp{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    
+    text-align: center;
+    
+    color: #111238;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.input-email input{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.input-email{
+    width: 290px;
+height: 70px;
+background: #FFFFFF;
+border: 1px solid rgba(209, 209, 209, 0.1);
+box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+border-radius: 5px;
+
+display: flex;
+align-items: center;
+
+margin: 30px auto;
+
+
+}
+
+.fa-envelope{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+margin-left: 210px;
+gap: 10px;
+
+position: absolute;
+width: 68.44px;
+height: 45px;
+background: #1A75E8;
+border-radius: 5px;
+color: #FFFFFF;
+
+}
+
+.fa-envelope::before{
+    display: flex;
+    height: 100%;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    position: relative;
+    top: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.logo{
+    margin-bottom: 20px;
+}
+
+footer>p{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    
+    text-align: center;
+    
+    color: #B2B2B2;
+    margin-bottom: 10px;
+}
